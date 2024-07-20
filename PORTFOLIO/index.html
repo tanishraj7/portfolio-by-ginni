@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanish Raj Singh's portfolio</title>
+    <style>
+        html{
+            background: radial-gradient( rgb(54, 2, 106), black);
+            background-size: 100%;
+           
+        }
+        body{
+            margin: 0px;
+        }
+        .main-title{
+            text-align: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        #para{
+            text-align: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .intro-box{
+            margin: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .pfp{
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+        .navigation-box{
+            margin: 50px;
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            
+            
+        }
+        .bttns{
+            background-color: white;  /*White background */
+            color: black;            /* Black text */
+            border: 2px solid rgb(93, 92, 92); /* Black border */
+            /*padding: 10px 20px;       Padding for the button */
+            font-size: 30px;         /* Font size */
+            cursor: pointer;         /* Pointer cursor on hover */
+            transition: background-color 0.3s, color 0.3s, width 0.5s, height 0.5s; /* Smooth transition for hover effect */
+            height: 100px;
+            width: 200px;
+            border-radius: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+    
+            
+        .bttns:hover {
+            background-color: black; /* Black background on hover */
+            color: white;            /* White text on hover */
+            width: 210px;
+            height: 110px;
+        }
+        .social{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 100px;
+            margin-left: 100px;
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+            
+        }
+        .social-icon{
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 30%;
+            cursor: pointer;
+            transition: width 0.7s, height 0.7s;
+        }
+        .social-icon:hover{
+            width: 250px;
+            height: 250px;
+        }
+        .f{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .f-box{
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            backdrop-filter: blur(100px);
+            border-radius: 50px;
+            background:url(/bck.jpg);
+            background-size: cover;
+            border: 3px solid whitesmoke;
+        }
+        .f-inbox{
+            padding-right: 100px;
+            padding-left: 100px;
+
+        }
+        .f-para{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .f-input{
+            color: white;
+            background: none;
+            border: 1px solid white;
+            width: 500px;
+            font-size: medium;
+        }
+        .other{
+            height: 50px;
+        }
+        .op{
+            color: black;
+        }
+        .f-bttns{
+            background:none;
+            color: white;
+            width: 150px;
+            height: 100px;
+            margin-top: 30px; 
+            border-radius: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            font-size: 25px;
+            transition: background-color 0.3s;
+            border: 1px solid white;
+            cursor: pointer;
+            
+        }
+        .f-bttns:hover{
+            background-color: white;
+            color: black;
+        }
+        .g{
+            margin-left: 10px;
+            color: rgb(121, 2, 249);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .inni{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .bar{
+            display: flex;
+            background-color: black;
+            margin: none;
+            border-top: 2px solid black;
+        }
+        .icon{
+            margin-left: 1480px;
+        }
+        .last{
+            text-align: center;
+            color: white;
+            font-size: medium;
+            font-family: sans-serif;
+        }
+        .nav-b{
+            background: none;
+            border: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="bar">
+                <h2 class="inni">portfolio by</h2> <h2 class="g">G</h2><h1 class="inni">INNI.</h1>
+            <div>
+                <p class="inni icon"><button onclick="btnhandler()" class="nav-b">about.</button> ☰</p>
+            </div>
+        </nav>
+    </header>
+    <section class="intro-box">
+        <div>
+            <pre class="main-title">Hi I am TANISH RAJ SINGH <p id="para">a Software Engineering Student at Manipal University Jaipur</p></pre>
+        </div>
+        <div >
+            <img class="pfp"  src="pfp.jpeg" alt="pfp"/>
+        </div>
+    </section>
+    <section class="navigation-box">
+        <a href="/education.html" target="_main"><button class="bttns"><p>Education</p></button></a>
+        <a href="/experience.html" target="_main"><button class="bttns"><p>Experience</p></button></a>
+        <a href="/projectnskills.html" target="_main" ><button class="bttns"><p>Projects+Skills</p></button></a>
+        <a href="/Tanish Raj Resume.pdf" target="_main"><button class="bttns"><p>Resume</p></button></a>
+
+    </section>
+    <section class="social">
+        <a href="https://www.instagram.com/tanishrajss/" target="_main"><img src="/instalogo.avif" class="social-icon" alt="insta"/></a>
+        <a href="https://github.com/tanishraj7" target="_main"><img src="/github.png" class="social-icon" alt="github"/></a>
+        <a href="https://www.linkedin.com/in/tanishrajsingh/" target="_main"><img src="/linkedin.jpg" class="social-icon" alt="linkedin"/></a>
+    </section>
+    <h2 class="main-title"><u>Contact me:</u></h2>
+    <section class="f">
+        <form class="f-box" onsubmit="myfunc(event)">
+            <div class="f-inbox">
+                <p class="f-para">NAME:-</p><input type="text" id="name" value="" required placeholder="full name" class="f-input other"/>
+            </div>
+            <div class="f-inbox">
+                <p class="f-para">WhatsApp NO.:-</p><input type="text" id="wa" value="" required placeholder="'+country code'" class="f-input other"/>
+            </div>
+            <div class="f-inbox">
+                <p class="f-para">OCCUPATION:-</p>
+                <select class="f-input other" id="occupation" value="">
+                    <option class="op">STUDENT</option>
+                    <option class="op">TEACHER</option>
+                    <option class="op">EMPLOYER</option>
+                </select>
+            </div>
+            <div class="f-inbox">
+                <p class="f-para">FEEDBACK:-</p>
+                <textarea placeholder="type here...." rows="10" class="f-input" id="feedback"></textarea>
+            </div>
+            <div class="f-inbox">
+                <input type="submit" class="f-bttns" value="Submit" onclick="clickhandler()"/>
+            </div>
+        </form>
+    </section>
+    <br>
+       <!-- <h2 style="display: block; color: gold; font-size: xx-large; font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow Bold', sans-serif; background-color: rgb(244, 242, 239);">More about Me:</h2>
+        <a href=style="display: block; color:black; font-size: x-large; font-family: Arial, Helvetica, sans-serif;"><b>Education->></b><i>click here!!</i> </a>
+        <a href="/PORTFOLIO/experience.html" target="_main" style="display: block; color:black; font-size: x-large; font-family: Arial, Helvetica, sans-serif;"><b>Experience->></b><i>click here!!</i></a>
+        <a href="/PORTFOLIO/projectnskills.html" target="_main" style="display: block; color:black; font-size: x-large; font-family: Arial, Helvetica, sans-serif;"><b>Skills and Projects->></b><i>click here!!</i></a>
+        <hr>
+        <h2 style="display: block; color: gold; font-size: xx-large; font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow Bold', sans-serif; background-color: rgb(244, 242, 239);">My Socials:</h2>
+        <a href="https://www.instagram.com/tanishrajss/" target="_main"><img src="/Saved Pictures/insta2.png" alt="insta" width="200px"></a>
+        <a href="https://www.facebook.com/tanishraj.singhshekhawat/?_rdr" target="_main"><img src="/Saved Pictures/Logo_de_Facebook.png" alt="facebook" width="200px"></a>
+        <hr>
+        <h2 style="display: block; color: gold; font-size: xx-large; font-family: Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow Bold', sans-serif; background-color: rgb(244, 242, 239);">Feedback:</h2>
+        <a href="/PORTFOLIO/feedback.html" target="_main" style="display: block; font-size: large; font-family: Arial, Helvetica, sans-serif; color: red;"><b>>>>>>>>>>>**Fill the form here**<<<<<<<<<<<</b></a>
+        <hr>
+        <footer>
+        <pre style="display: block; color: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: xx-large; text-align: center;">      Thankyou for Visitingg <3
+        (do visit the feedback page if you haven't already)</pre>
+        <video src="/Saved Pictures/Y2Mate.is - HD moon night scenario live wallpaper-3Ydih6D07Ew-1080p-1660191852124.mp4" width="500" height="500" loop autoplay><center></center></video>
+        </footer>-->
+        <h1 id="para">OR</h1>
+        <br>
+        <h1 class="last">tanishrajsingh2607@gamil.com</h1><p class="last">+91 9828049678</p>
+        <br>
+        <script src="index.js" defer></script>
+</body>
+</html>
